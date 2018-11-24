@@ -22,4 +22,3 @@ $form2->onSubmit(function($form2){
   return $form2->success('Record updated');
 
 });
-  
