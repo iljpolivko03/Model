@@ -26,7 +26,7 @@ function init(){
       $this->hasMany('Loan',new Loan())->addField('total_loan', ['aggregate'=>'sum', 'field'=>'amount']);
   		$this->hasMany('Vozvrat',new Vozvrat())->addField('total_vozvrat', ['aggregate'=>'sum', 'field'=>'amount']);
   		$this->addFields(['name','email']);
-      $this->hasOne('clients_id',new Clients)->addTitle();
+      $this->hasOne('clients_ilja_id',new Clients)->addTitle();
     }
   }
 
@@ -36,7 +36,7 @@ function init(){
           parent::init();
           $this->addField('amount');
           $this->addField('date');
-          $this->hasOne('friends_id',new Friends);
+          $this->hasOne('friends_ilja_id',new Friends);
         }
       }
 
@@ -46,7 +46,7 @@ function init(){
                   parent::init();
                   $this->addField('amount');
                   $this->addField('date');
-                  $this->hasOne('friends_id',new Friends);
+                  $this->hasOne('friends_ilja_id',new Friends);
                 }
               }
 
