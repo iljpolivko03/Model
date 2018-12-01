@@ -20,6 +20,3 @@ $form->onSubmit(function($form) use ($user){
     return $er;
   }
 });
-
-$button=$app->add('Button',;'Admin','blue');
-$button->link('admin.php')
